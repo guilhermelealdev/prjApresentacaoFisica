@@ -1,0 +1,117 @@
+h2{
+    text-align: center;
+}
+
+#explicacao-leis{
+    display: grid;
+    grid-template-rows: 0.2fr 0.5fr;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#explicacao-leis {
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 750px; 
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#explicacao-leis h3 {
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#explicacao-leis p {
+  font-size: 1.1rem;
+  text-align: justify; 
+  margin: 0;
+}
+
+#leis-de-newton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#leis-de-newton-section{
+    border-radius: 16px;
+    padding: 3rem 7rem;
+    border: 2px solid var(--borda-transparente);
+    background-color: gray;
+    display: grid;
+    height: 80%;
+    width: 60%;
+    margin: 0;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.1rem;
+    
+}
+.card{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 16px;
+    margin: 1rem auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.dentro{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    
+}
+.card:hover .dentro {
+    transform: rotateY(180deg);
+}
+
+.frente, .atras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+#segunda-lei {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;           
+}
+
+#segunda-lei p {
+  margin: 5px; 
+}
+
+.frente{
+    border-radius: 16px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(57, 57, 57);
+    box-shadow: var(--shadow-transparente);
+    border: var(--borda-transparente);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+.atras{
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    transform: rotateY(180deg);
+}
