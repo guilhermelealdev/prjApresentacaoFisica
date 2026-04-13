@@ -3,7 +3,7 @@ export function LeisDeNewton() {
     <>
       <h2>LEIS DE NEWTON</h2>
 
-      <section id="explicacao-leis">
+      <section className="explicacao">
         <h3>O que são as leis de Newton?</h3>
         <p>
           As Leis de Newton são os três pilares da mecânica clássica. Publicadas

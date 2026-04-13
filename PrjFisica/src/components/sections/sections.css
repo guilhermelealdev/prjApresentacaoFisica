@@ -10,7 +10,7 @@ h2 {
   background-color: black;
 }
 
-#explicacao-leis {
+.explicacao{
   padding: 30px;
   margin: 40px auto;
   max-width: 750px;
@@ -19,13 +19,13 @@ h2 {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-#explicacao-leis h3 {
+.explicacao h3 {
   font-size: 1.6rem;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
-#explicacao-leis p {
+.explicacao p {
   font-size: 1.1rem;
   text-align: justify;
   margin: 0;
