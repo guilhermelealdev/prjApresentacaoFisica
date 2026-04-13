@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+}
+:root{
+    /*background-color*/
+    --transparente:rgba(255, 255, 255, 0.19);
+    /* box-shadow: */
+    --shadow-transparente:0 4px 30px rgba(0, 0, 0, 0.1);
+    /*backdrop-filter webkit-''*/
+    --blur:12.3px;
+    /*border*/
+    --borda-transparente: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+img{
+    border-radius: 20px;
+}
+
