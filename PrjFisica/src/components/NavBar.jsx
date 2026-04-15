@@ -14,5 +14,13 @@
  */
 
 export function NavBar() {
-    
+    return (
+        <nav>
+            <ul>
+                <li><a href="">Forças</a></li>
+                <li><a href="">Gravidade</a></li>
+                <li><a href="">Leis de Newton</a></li>
+            </ul>
+        </nav>
+    )
 }

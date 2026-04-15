@@ -1,5 +1,7 @@
 import { LeisDeNewton } from "./sections/LeisDeNewton";
-import "./sections/sections.css"
+import { Forcas } from "./sections/Forcas";
+import { Gravidade } from "./sections/Gravidade";
+import "./sections/sections.css";
 
 /**
  * Main Component
@@ -25,8 +27,10 @@ import "./sections/sections.css"
 
 export function Main() {
   return (
-  <main>
-      <LeisDeNewton/>
-  </main >
+    <main>
+      <Forcas />
+      <Gravidade />
+      <LeisDeNewton />
+    </main>
   );
 }
